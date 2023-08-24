@@ -9,7 +9,7 @@
 #  
 #    - Check C:\Temp for N-Central Install.txt and log_error.txt for any errors   
 #
-#    - Grab Client Secret from ITG link and paste below before using on line 32 >>> https://xceptional.itglue.com/1220910/passwords/22884812 
+#  
 ######################################################################################################################################################################################
 
 # Set Definitions
