@@ -12,9 +12,6 @@
 #    - Grab Client Secret from ITG link and paste below before using on line 32 >>> https://xceptional.itglue.com/1220910/passwords/22884812 
 ######################################################################################################################################################################################
 
-# Bypass Execution Policy
-Set-ExecutionPolicy bypass
-
 # Set Definitions
 $ApplicationName = ""
 $ServiceName = "Agent64"
@@ -27,8 +24,8 @@ $MSIArguments = @(
 )
 
 # Google Drive Download Authorization 
-$refreshToken = "1/gWFBBPM0HwSSAgkFFBhGDvOcYGy4nCf0kkzj4brj0pfevrsDdS5S5zbrEeP3Zdhw"
-$ClientID = "772938703925-5o9ph9mkojh8rsgr6ktt1lvdvn6k9g6u.apps.googleusercontent.com"
+$refreshToken = ""
+$ClientID = ""
 $ClientSecret = ""
 $grantType = "refresh_token"
 $requestUri = "https://accounts.google.com/o/oauth2/token"
