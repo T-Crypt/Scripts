@@ -8,7 +8,7 @@ import (
 )
 
 const (
-	URL = "http://167.172.62.51:32646/login"
+	URL = "/login"
 )
 
 func checkLogin(formData url.Values) bool {
