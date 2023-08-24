@@ -2,7 +2,7 @@
 # Installs N-central Agent on Windows ( *.exe )
 #
 # Usage:
-#    - Place your N-Central Agent download in Xceptional Google Drive (Xceptional > Technical Services > Hosted Software Depot > Client)
+#    
 #    - Get link from Google Drive for the specific N-Central Agent 
 #    - Copy the Google File ID and paste the ID in the file URL on line 71
 #            -  It is the combination of letters and numbers that appear after "d/" in the link: https://docs.google.com/spreadsheets/d/***ThisIsFileID***/edit#gid=123456789
