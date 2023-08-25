@@ -1,8 +1,8 @@
-#Function to get token with Xceptional Google Drive & set the headers for your download
+#Function to get token with Google Drive & set the headers for your download
 ###########################################################################
 
-$refreshToken = "1/gWFBBPM0HwSSAgkFFBhGDvOcYGy4nCf0kkzj4brj0pfevrsDdS5S5zbrEeP3Zdhw"
-$ClientID = "772938703925-5o9ph9mkojh8rsgr6ktt1lvdvn6k9g6u.apps.googleusercontent.com"
+$refreshToken = ""
+$ClientID = ""
 $grantType = "refresh_token" 
 $requestUri = "https://accounts.google.com/o/oauth2/token" 
 $GAuthBody = "refresh_token=$refreshToken&client_id=$ClientID&client_secret=$GoogleClientSecret&grant_type=$grantType" 
