@@ -4,7 +4,7 @@
 # Usage:
 #    
 #    - Get link from Google Drive for the specific N-Central Agent 
-#    - Copy the Google File ID and paste the ID in the file URL on line 71
+#    - Copy the Google File ID and paste the ID in the file URL on line 71 between ()
 #            -  It is the combination of letters and numbers that appear after "d/" in the link: https://docs.google.com/spreadsheets/d/***ThisIsFileID***/edit#gid=123456789
 #  
 #    - Check C:\Temp for N-Central Install.txt and log_error.txt for any errors   
@@ -23,7 +23,7 @@ $MSIArguments = @(
      "/passive"
 )
 
-# Google Drive Download Authorization 
+# Google Drive Download Authorization // Add Refresh Token // Add Client ID // Add Client Secret 
 $refreshToken = ""
 $ClientID = ""
 $ClientSecret = ""
@@ -70,7 +70,7 @@ try {
 }
 
 # Download Google Drive File and place the output file in Temp (Modify the Google File ID for the customer specific N-Central Agent)
-$File = Invoke-RestMethod -Uri "https://www.googleapis.com/drive/v3/files/1rJgbSXpn2bB917JjOmgy-vpA-BnGB-3T?alt=media" -Method Get -Headers $headers -OutFile "C:\Temp\Agent64.exe"
+$File = Invoke-RestMethod -Uri "https://www.googleapis.com/drive/v3/files/()?alt=media" -Method Get -Headers $headers -OutFile "C:\Temp\Agent64.exe"
 
 # Start the install using the command Arguments 
 Start-Process $FullFilePath -ArgumentList $MSIArguments -Wait -NoNewWindow 
